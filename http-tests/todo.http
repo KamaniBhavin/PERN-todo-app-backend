@@ -1,0 +1,38 @@
+###
+POST {{host}}/api/todos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "Todo 2",
+  "description": "test",
+  "userId": "95125451-317f-4a03-88b5-5fbbe0757e9d"
+}
+
+###
+PUT {{host}}/api/todos
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "id": "b9fedf81-55e8-4230-afe6-2eb2f5996c75",
+  "title": "Todo 2 updated",
+  "description": "test",
+  "userId": "95125451-317f-4a03-88b5-5fbbe0757e9d"
+}
+
+###
+GET {{host}}/api/todos
+Authorization: Bearer {{token}}
+
+
+###
+GET {{host}}/api/todos/b9fedf81-55e8-4230-afe6-2eb2f5996c75
+Authorization: Bearer {{token}}
+
+
+###
+DELETE {{host}}/api/todos/b9fedf81-55e8-4230-afe6-2eb2f5996c75
+Authorization: Bearer {{token}}
+
+

@@ -1,0 +1,21 @@
+###
+POST {{host}}/api/users/sign-up
+Content-Type: application/json
+
+{
+  "username": "bhavin",
+  "password": "1234567890"
+}
+
+> {% client.global.set("token", response.body.data); %}
+
+###
+POST {{host}}/api/users/sign-in
+Content-Type: application/json
+
+{
+  "username": "bhavin",
+  "password": "1234567890"
+}
+
+> {% client.global.set("token", response.body.data); %}

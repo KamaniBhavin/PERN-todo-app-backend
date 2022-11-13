@@ -16,7 +16,7 @@ model User {
   updatedAt DateTime @default(now()) @updatedAt
   username  String   @unique @db.VarChar(32)
   password  String
-  toods     Todo[]
+  todos     Todo[]
 }
 
 enum Status {
